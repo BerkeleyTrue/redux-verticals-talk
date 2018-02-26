@@ -14,7 +14,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "normalize.css": "7.0.0",
+    "normalize.css": "8.0.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "spectacle": "^4.0.0",
@@ -46,7 +46,7 @@
     "express": "^4.16.2",
     "file-loader": "^1.1.5",
     "html-loader": "^0.5.1",
-    "is-buffer": "^1.1.5",
+    "is-buffer": "^2.0.0",
     "markdown-loader": "^2.0.1",
     "node-libs-browser": "^2.0.0",
     "raw-loader": "^0.5.1",
@@ -54,12 +54,12 @@
     "react-transform-catch-errors": "^1.0.2",
     "redbox-react": "^1.5.0",
     "rimraf": "^2.6.2",
-    "style-loader": "^0.19.0",
+    "style-loader": "^0.20.2",
     "surge": "latest",
     "url-loader": "^0.6.2",
-    "webpack": "3.8.1",
-    "webpack-dev-middleware": "^1.12.0",
-    "webpack-dev-server": "^2.9.3",
+    "webpack": "4.0.0",
+    "webpack-dev-middleware": "^2.0.6",
+    "webpack-dev-server": "^3.0.0",
     "webpack-hot-middleware": "^2.20.0"
   }
 }
