@@ -1,5 +1,7 @@
 # Spectacle Boilerplate
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/BerkeleyTrue/redux-verticals-talk.svg)](https://greenkeeper.io/)
+
 ## Contents
 
 - [Reference](#reference)
