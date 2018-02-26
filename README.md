@@ -1,48 +1,25 @@
-# Spectacle Boilerplate
+# Redux Verticals
 
-## Contents
+A talk based on a discussion with Borris Cherny (@bcherny) on the structure and
+core theories behind freeCodeCamps redux/react/rx codebase.
 
-- [Reference](#reference)
-- [Getting Started](#getting-started)
-- [Build & Deployment](#build-deployment)
+## Notes from initial discussion
 
-## Reference
-
-The Spectacle core API is available at [https://github.com/FormidableLabs/spectacle/blob/master/README.md](https://github.com/FormidableLabs/spectacle/blob/master/README.md).
-
-## Getting Started
-
-After downloading the boilerplate, your first order of business is to open a terminal and run 
-```bash
-yarn
-```
-or 
-```bash
-npm install
-```
-if you're about that life.
-
-Next, run 
-```bash
-rm -R .git
-```
-to remove the existing version control.
-
-Then, to start up the local server, run
-```bash
-npm start
-```
-
-Open a browser and hit [http://localhost:3000](http://localhost:3000), and we are ready to roll.
-
-## Build & Deployment
-
-Building the dist version of the project is as easy as running
-```bash
-npm run build
-```
-
-If you want to deploy the slideshow to surge, run 
-```bash
-npm run deploy
-```
+- Why most people find redux frustrating
+  * reducer/action boilerplate
+  * 1 to 1 reducer/action ratio misconception
+  * creating actions for reducers (commands) vs creating actions for app events
+- action/reducer relationship should be many to many
+- actions should be written for events for and second for reducers/commands
+- reducers should respond to at least one action
+- reducers could respond to many actions
+- actions can trigger zero or more state changes
+- reducers should care only about their own state but can respond to actions
+  from other parts of the app
+- namespace actions to specific features of your app
+- flat is better
+  - flat folder structure
+  - flat combined reducer shape
+- imports can be circular
+- state updating state(dont remember this one)
+- inspired by clojure namespacing
