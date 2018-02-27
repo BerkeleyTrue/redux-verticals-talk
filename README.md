@@ -7,7 +7,6 @@ core theories behind freeCodeCamps redux/react/rx codebase.
 
 - Why most people find redux frustrating
   * reducer/action boilerplate
-    - foo
   * 1 to 1 reducer/action ratio misconception
   * creating actions for reducers (commands) vs creating actions for app events
 - action/reducer relationship should be many to many

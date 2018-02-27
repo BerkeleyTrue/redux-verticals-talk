@@ -3,13 +3,10 @@ import React from "react";
 
 // Import Spectacle Core tags
 import {
-  BlockQuote,
-  Cite,
   Deck,
   Heading,
   ListItem,
   List,
-  Quote,
   Slide,
   Text
 } from "spectacle";
@@ -39,17 +36,8 @@ export default class Presentation extends React.Component {
             Redux Verticals
           </Heading>
           <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-            Managing redux in a complex app
+            Managing Redux in Complex Apps
           </Text>
-        </Slide>
-        <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={6} textColor="primary" caps>Main complaints</Heading>
-          <Heading size={1} textColor="secondary">Boilerplate</Heading>
-          <Heading size={2} textColor="secondary">b</Heading>
-          <Heading size={3} textColor="secondary">c</Heading>
-          <Heading size={4} textColor="secondary">d</Heading>
-          <Heading size={5} textColor="secondary">e</Heading>
-          <Text size={6} textColor="secondary">Standard text</Text>
         </Slide>
         <Slide>
           <Heading
@@ -67,6 +55,20 @@ export default class Presentation extends React.Component {
             <ListItem>
               Developer @freeCodeCamp
             </ListItem>
+            <ListItem>
+              Advocate
+              <List>
+                <ListItem>
+                  Composability
+                </ListItem>
+                <ListItem>
+                  Reactivity
+                </ListItem>
+                <ListItem>
+                  Simplicity
+                </ListItem>
+              </List>
+            </ListItem>
           </List>
         </Slide>
         <Slide
@@ -77,7 +79,7 @@ export default class Presentation extends React.Component {
             size={ 2 }
             textColor="white"
           >
-              What it's inside:
+            What it's inside:
           </Heading>
           <List
             bold
@@ -88,11 +90,12 @@ export default class Presentation extends React.Component {
               Redux architectural ideas
             </ListItem>
             <ListItem>
-                Comparisons to other patterns
+              Comparisons to other patterns
             </ListItem>
             <ListItem>
-                General rules
-            </ListItem> </List>
+              General rules
+            </ListItem>
+          </List>
         </Slide>
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={6} textColor="secondary" caps>
@@ -103,10 +106,29 @@ export default class Presentation extends React.Component {
               Too much boilerplate
             </ListItem>
             <ListItem>
+              Action creator functions
+            </ListItem>
+            <ListItem>
+              long switch statements reducers
+            </ListItem>
+            <ListItem>
+              Wiring To React (Containers)
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide>
+          <Heading>
+            Common misconceptions
+          </Heading>
+          <List>
+            <ListItem>
               1 to 1 action/reducer misconception
             </ListItem>
             <ListItem>
               creating actions for reducers
+            </ListItem>
+            <ListItem>
+              Using actions as commands
             </ListItem>
           </List>
         </Slide>
@@ -116,7 +138,7 @@ export default class Presentation extends React.Component {
           </Heading>
           <List>
             <ListItem>
-              Can keep you on track
+              Preferable over complex frameworks
             </ListItem>
             <ListItem>
               Can be mitigated with utils libraries
@@ -126,6 +148,72 @@ export default class Presentation extends React.Component {
             </ListItem>
             <ListItem>
               Keeps core library unopinionated
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide>
+          <Heading>
+            Decide on standards
+          </Heading>
+          <List>
+            <ListItem>
+              Use Flux Standard Actions (FSA)
+            </ListItem>
+            <ListItem>
+              Action Types should be events
+            </ListItem>
+            <ListItem>
+              Separate by Feature
+            </ListItem>
+            <ListItem>
+              Use namespacing
+            </ListItem>
+            <ListItem>
+              Use selectors
+            </ListItem>
+            <ListItem>
+              Use meta for commands
+            </ListItem>
+            <ListItem>
+              Use Redux-Observables
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide>
+          <Heading>
+            FSA
+          </Heading>
+          <List>
+            <ListItem>
+              type
+            </ListItem>
+            <ListItem>
+              payload
+            </ListItem>
+            <ListItem>
+              meta
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide>
+          <Heading>
+            Action types as events
+          </Heading>
+          <Heading size={4}>
+            clickOnCreateThing vs makeThing
+          </Heading>
+          <text>
+            Describes your UI
+          </text>
+          <List>
+            <ListItem>
+              clickOnCreateTodo
+            </ListItem>
+            <ListItem>
+              hoverOverTodo
+            </ListItem>
+            <ListItem>
+              fetchTodoComplete
             </ListItem>
           </List>
         </Slide>
