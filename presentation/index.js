@@ -36,35 +36,98 @@ export default class Presentation extends React.Component {
       <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
         <Slide transition={["zoom"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Spectacle Boilerplate
+            Redux Verticals
           </Heading>
           <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-            open the presentation/index.js file to get started
+            Managing redux in a complex app
           </Text>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={6} textColor="primary" caps>Typography</Heading>
-          <Heading size={1} textColor="secondary">Heading 1</Heading>
-          <Heading size={2} textColor="secondary">Heading 2</Heading>
-          <Heading size={3} textColor="secondary">Heading 3</Heading>
-          <Heading size={4} textColor="secondary">Heading 4</Heading>
-          <Heading size={5} textColor="secondary">Heading 5</Heading>
+          <Heading size={6} textColor="primary" caps>Main complaints</Heading>
+          <Heading size={1} textColor="secondary">Boilerplate</Heading>
+          <Heading size={2} textColor="secondary">b</Heading>
+          <Heading size={3} textColor="secondary">c</Heading>
+          <Heading size={4} textColor="secondary">d</Heading>
+          <Heading size={5} textColor="secondary">e</Heading>
           <Text size={6} textColor="secondary">Standard text</Text>
         </Slide>
+        <Slide>
+          <Heading
+            textColor="secondary"
+          >
+            Who I Am
+          </Heading>
+          <List
+            bold
+            caps={ false }
+          >
+            <ListItem>
+              BerkeleyTrue
+            </ListItem>
+            <ListItem>
+              Developer @freeCodeCamp
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide
+          bgColor="black"
+        >
+          <Heading
+            caps
+            size={ 2 }
+            textColor="white"
+          >
+              What it's inside:
+          </Heading>
+          <List
+            bold
+            caps
+            textColor="white"
+          >
+            <ListItem>
+              Redux architectural ideas
+            </ListItem>
+            <ListItem>
+                Comparisons to other patterns
+            </ListItem>
+            <ListItem>
+                General rules
+            </ListItem> </List>
+        </Slide>
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
-          <Heading size={6} textColor="secondary" caps>Standard List</Heading>
+          <Heading size={6} textColor="secondary" caps>
+            Common Frustrations
+          </Heading>
           <List>
-            <ListItem>Item 1</ListItem>
-            <ListItem>Item 2</ListItem>
-            <ListItem>Item 3</ListItem>
-            <ListItem>Item 4</ListItem>
+            <ListItem>
+              Too much boilerplate
+            </ListItem>
+            <ListItem>
+              1 to 1 action/reducer misconception
+            </ListItem>
+            <ListItem>
+              creating actions for reducers
+            </ListItem>
           </List>
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-          <BlockQuote>
-            <Quote>Example Quote</Quote>
-            <Cite>Author</Cite>
-          </BlockQuote>
+          <Heading>
+            Boilerplate
+          </Heading>
+          <List>
+            <ListItem>
+              Can keep you on track
+            </ListItem>
+            <ListItem>
+              Can be mitigated with utils libraries
+            </ListItem>
+            <ListItem>
+              Keeps core library small
+            </ListItem>
+            <ListItem>
+              Keeps core library unopinionated
+            </ListItem>
+          </List>
         </Slide>
       </Deck>
     );
