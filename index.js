@@ -21,7 +21,7 @@ ReactDOM.render(
 
 if (module.hot) {
   module.hot.accept("./presentation", () => {
-    const NextPresentation = require("./presentation").default;    ReactDOM.render(
+    const NextPresentation = require("./presentation").default; ReactDOM.render(
       <AppContainer errorReporter={CustomErrorReporter}>
         <NextPresentation />
       </AppContainer>,
