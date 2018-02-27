@@ -217,6 +217,123 @@ export default class Presentation extends React.Component {
             </ListItem>
           </List>
         </Slide>
+        <Slide>
+          <Heading>
+            Separate by Feature
+          </Heading>
+          <Heading size={4}>
+            not by type
+          </Heading>
+          <Text>
+            A distinct part of your app
+            (\TodoList vs \containers)
+          </Text>
+          <List>
+            <ListItem>
+              DefaultState
+            </ListItem>
+            <ListItem>
+              Selectors
+            </ListItem>
+            <ListItem>
+              Reducers
+            </ListItem>
+            <ListItem>
+              Action Types
+            </ListItem>
+            <ListItem>
+              Epics (or Sagas)
+            </ListItem>
+            <ListItem>
+              Components
+            </ListItem>
+            <ListItem>
+              Styles
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide>
+          <Heading>
+            Common Folder = less searching
+          </Heading>
+        </Slide>
+        <Slide>
+          <Heading>
+            Redux - Ducks Pattern
+          </Heading>
+          <Heading size={6}>
+            State concerns in one file
+          </Heading>
+          <List>
+            <ListItem>
+              Easy Refactoring
+            </ListItem>
+            <ListItem>
+              Events => State
+            </ListItem>
+          </List>
+          <Heading size={6}>
+            State Concerns in Feature Folder
+          </Heading>
+        </Slide>
+        <Slide>
+          SBF example
+        </Slide>
+        <Slide>
+          <Heading>
+            namespacing (NS)
+          </Heading>
+          <Heading size={5}>
+            Inspired by Clojure
+          </Heading>
+          <List>
+            <ListItem>
+              Features can be namespaces
+            </ListItem>
+            <ListItem>
+              i.e. Todo, TodoList, Header, Footer, App
+            </ListItem>
+            <ListItem>
+              Action Types
+              <List>
+                <ListItem>
+                  header.titleUpdated
+                </ListItem>
+                <ListItem>
+                  footer.clickOnShowCompleted
+                </ListItem>
+                <ListItem>
+                  todolist.clickOnComplete
+                </ListItem>
+                <ListItem>
+                  app.fetchTodosComplete
+                </ListItem>
+              </List>
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide>
+          <Heading>
+            Why?
+          </Heading>
+          <List>
+            <ListItem>
+              Easily trace actions
+            </ListItem>
+            <ListItem>
+              Common events with Same names
+            </ListItem>
+            <ListItem>
+              Group common events throughout
+            </ListItem>
+            <ListItem>
+              Test in isolation
+            </ListItem>
+            <ListItem>
+              (mount Features on their own?)
+            </ListItem>
+          </List>
+        </Slide>
       </Deck>
     );
   }
