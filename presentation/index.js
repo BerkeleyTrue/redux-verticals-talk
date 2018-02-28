@@ -56,8 +56,11 @@ export default class Presentation extends React.Component {
               Developer @freeCodeCamp
             </ListItem>
             <ListItem>
-              Advocate
+              Advocate:
               <List>
+                <ListItem>
+                  Declarative Programming
+                </ListItem>
                 <ListItem>
                   Composability
                 </ListItem>
@@ -81,21 +84,9 @@ export default class Presentation extends React.Component {
           >
             What it's inside:
           </Heading>
-          <List
-            bold
-            caps
-            textColor="white"
-          >
-            <ListItem>
-              Redux architectural ideas
-            </ListItem>
-            <ListItem>
-              Comparisons to other patterns
-            </ListItem>
-            <ListItem>
-              General rules
-            </ListItem>
-          </List>
+          <Heading size={1}>
+            Redux Architectural Guidelines
+          </Heading>
         </Slide>
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={6} textColor="secondary" caps>
@@ -103,16 +94,16 @@ export default class Presentation extends React.Component {
           </Heading>
           <List>
             <ListItem>
-              Too much boilerplate
+              Boilerplate
             </ListItem>
             <ListItem>
-              Action creator functions
+              Action creators
             </ListItem>
             <ListItem>
-              long switch statements reducers
+              Long switch statements reducers
             </ListItem>
             <ListItem>
-              Wiring To React (Containers)
+              Wiring to react (Containers)
             </ListItem>
           </List>
         </Slide>
@@ -139,6 +130,9 @@ export default class Presentation extends React.Component {
           <List>
             <ListItem>
               Preferable over complex frameworks
+            </ListItem>
+            <ListItem>
+              Clear and distinct boundaries
             </ListItem>
             <ListItem>
               Can be mitigated with utils libraries
@@ -188,10 +182,10 @@ export default class Presentation extends React.Component {
               type
             </ListItem>
             <ListItem>
-              payload
+              payload (data needed for state change)
             </ListItem>
             <ListItem>
-              meta
+              {"meta ({ commands, analytics, ..etc })"}
             </ListItem>
           </List>
         </Slide>
@@ -321,7 +315,7 @@ export default class Presentation extends React.Component {
               Easily trace actions
             </ListItem>
             <ListItem>
-              Common events with Same names
+              Common events with same names
             </ListItem>
             <ListItem>
               Group common events throughout
@@ -340,7 +334,7 @@ export default class Presentation extends React.Component {
           </Heading>
           <List>
             <ListItem>
-              Snuggly up with defaultState
+              Right next to defaultState
             </ListItem>
             <ListItem>
               Strictly to pull value
@@ -381,6 +375,86 @@ export default class Presentation extends React.Component {
               Pulling state from many selectors
             </ListItem>
           </List>
+        </Slide>
+        <Slide>
+          <Heading>
+            Meta for commands
+          </Heading>
+          <List>
+            <ListItem>
+              Use action meta to command other features
+            </ListItem>
+            <ListItem>
+              Call non-feature commands (sub actions)
+            </ListItem>
+            <ListItem>
+              Change state outside of this feature
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide>
+          <Heading>
+            Epics > Sagas > Thunks
+          </Heading>
+          <Heading size={6}>
+            Party in the front, Business in the back
+          </Heading>
+          <List>
+            <ListItem>
+              UI represents application state (Party!)
+            </ListItem>
+            <ListItem>
+              Business logic in your epics
+              <List>
+                <ListItem>
+                  Side effects: fetching data, localStorage, cookies
+                </ListItem>
+                <ListItem>
+                  Business Logic: Finding an item in a Tree after an action
+                </ListItem>
+                <ListItem>
+                  Deriving data from multiple features (avoid if possible)
+                </ListItem>
+                <ListItem>
+                  Avoid event => events (anti-pattern)
+                </ListItem>
+              </List>
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide>
+          <Heading>
+            Inspiration
+          </Heading>
+          <List>
+            <ListItem>
+              CSP/Event Sourcing
+            </ListItem>
+            <ListItem>
+              Clojure namespacing
+            </ListItem>
+            <ListItem>
+              Fulcro Clojure(Script) Framework <small>(formally untangled)</small>
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide>
+          <List>
+            <ListItem>
+              What frustrates you about Redux?
+            </ListItem>
+            <ListItem>
+              What do you use to organize?
+            </ListItem>
+            <ListItem>
+              Have you found any interesting patterns?
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide>
+          <Heading>
+            Questions?
+          </Heading>
         </Slide>
       </Deck>
     );
