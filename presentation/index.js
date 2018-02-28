@@ -422,6 +422,16 @@ export default class Presentation extends React.Component {
             </ListItem>
           </List>
         </Slide>
+        <a target="_blank" href="https://www.npmjs.com/package/berkeleys-redux-utils">
+          <Slide>
+            <Heading>
+              berkeleys-redux-utils
+            </Heading>
+            <Heading size={6}>
+              (will rename soon)
+            </Heading>
+          </Slide>
+        </a>
         <Slide>
           <Heading>
             Inspiration
