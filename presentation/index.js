@@ -175,7 +175,7 @@ export default class Presentation extends React.Component {
               Use meta for commands
             </ListItem>
             <ListItem>
-              Use Redux-Observables
+              Epics > Sagas > Thunks
             </ListItem>
           </List>
         </Slide>
@@ -331,6 +331,54 @@ export default class Presentation extends React.Component {
             </ListItem>
             <ListItem>
               (mount Features on their own?)
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide>
+          <Heading>
+            Selectors
+          </Heading>
+          <List>
+            <ListItem>
+              Snuggly up with defaultState
+            </ListItem>
+            <ListItem>
+              Strictly to pull value
+            </ListItem>
+            <ListItem>
+              Or to create derived State
+            </ListItem>
+            <ListItem>
+              Selector at component should not know state shape
+              <List>
+                <ListItem>
+                  Refactor state =/= Refactoring Components
+                </ListItem>
+                <ListItem>
+                  Component can be tested with just proptypes
+                </ListItem>
+              </List>
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide>
+          <Heading>
+            Use reselect sparingly
+          </Heading>
+          <List>
+            <ListItem>
+              When deriving state from complex data structures
+              <List>
+                <ListItem>
+                  Array iteration
+                </ListItem>
+                <ListItem>
+                  Denormalizing state
+                </ListItem>
+              </List>
+            </ListItem>
+            <ListItem>
+              Pulling state from many selectors
             </ListItem>
           </List>
         </Slide>
