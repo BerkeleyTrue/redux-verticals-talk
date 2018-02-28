@@ -8,11 +8,16 @@ import {
   ListItem,
   List,
   Slide,
-  Text
+  Text,
+  Image
 } from "spectacle";
 
 // Import theme
 import createTheme from "spectacle/lib/themes/default";
+import sbf1 from "../assets/SBF-1.png";
+import sbfMap from "../assets/SBF-Map.png";
+import sbfSubFeature from "../assets/SBF-sub-feature.png";
+import modDucks from "../assets/Mod-Ducks.png";
 
 // Require CSS
 require("normalize.css");
@@ -271,7 +276,16 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
         <Slide>
-          SBF example
+          <Image src={modDucks} />
+        </Slide>
+        <Slide>
+          <Image src={sbf1} />
+        </Slide>
+        <Slide>
+          <Image src={sbfMap} />
+        </Slide>
+        <Slide>
+          <Image src={sbfSubFeature} />
         </Slide>
         <Slide>
           <Heading>
