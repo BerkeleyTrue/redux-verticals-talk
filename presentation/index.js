@@ -118,7 +118,7 @@ export default class Presentation extends React.Component {
           </Heading>
           <List>
             <ListItem>
-              1 to 1 action/reducer misconception
+              1 to 1 action/reducer
             </ListItem>
             <ListItem>
               creating actions for reducers
@@ -410,9 +410,6 @@ export default class Presentation extends React.Component {
           <Heading>
             Epics > Sagas > Thunks
           </Heading>
-          <Heading size={6}>
-            Party in the front, Business in the back
-          </Heading>
           <List>
             <ListItem>
               UI represents application state (Party!)
@@ -436,16 +433,6 @@ export default class Presentation extends React.Component {
             </ListItem>
           </List>
         </Slide>
-        <a target="_blank" href="https://www.npmjs.com/package/berkeleys-redux-utils">
-          <Slide>
-            <Heading>
-              berkeleys-redux-utils
-            </Heading>
-            <Heading size={6}>
-              (will rename soon)
-            </Heading>
-          </Slide>
-        </a>
         <Slide>
           <Heading>
             Inspiration
@@ -463,21 +450,8 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
         <Slide>
-          <List>
-            <ListItem>
-              What frustrates you about Redux?
-            </ListItem>
-            <ListItem>
-              What do you use to organize?
-            </ListItem>
-            <ListItem>
-              Have you found any interesting patterns?
-            </ListItem>
-          </List>
-        </Slide>
-        <Slide>
           <Heading>
-            Questions?
+            Thanks
           </Heading>
         </Slide>
       </Deck>
