@@ -58,9 +58,6 @@ export default class Presentation extends React.Component {
               BerkeleyTrue
             </ListItem>
             <ListItem>
-              Developer @freeCodeCamp
-            </ListItem>
-            <ListItem>
               Advocate:
               <List>
                 <ListItem>
